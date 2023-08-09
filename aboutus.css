@@ -18,15 +18,6 @@ body {
   font-size: 40px;
   margin-top: 10;
 }
-#about-us-content {
-  text-align: left;
-  margin-left: 86px;
-  font-family: "Istok Web", sans-serif;
-  font-size: 17px;
-  top: 180px;
-  position: absolute;
-  margin-right: 86px;
-}
 #about-us-main {
   position: relative;
   text-align: left;
@@ -36,74 +27,70 @@ body {
   font-family: "Istok Web", sans-serif;
   font-style: italic;
   font-weight: lighter;
-  top: 205px;
+  top: 170px;
   font-size: 17px;
 }
-#icons {
-  background-color: rgb(255, 255, 255);
-  margin-left: 86px;
-  position: relative;
-  margin-right: 86px;
-  top: 50px;
-}
-.fa-regular {
-  display: block;
-  color: #949494;
-  position: relative;
-  font-size: 25px;
-  display: inline;
-  margin-right: 20px;
-}
-#icon-text {
-  position: relative;
-  margin-top: 15px;
-}
-#icon-text h3 {
-  display: inline;
-  font-weight: lighter;
-}
-footer {
-  margin-left: 10px;
-  margin-top: 40px;
-}
-#footer-head {
-  margin-left: 86px;
-  position: relative;
-  margin-right: 86px;
-  font-weight: 20px;
-  top: -40px;
-}
-#footer-text {
-  font-weight: 20px;
+#content {
+  padding-left: 10px;
+  margin-left: 75px;
+  width: 80%;
+  margin-top: 50px;
   font-family: "Istok Web", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 200%;
 }
-#footer-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-left: 14%;
-  width: 70%;
-  height: 69px;
-  position: absolute;
-  top: 570px;
-}
-#ul-footer {
+#learn {
+  padding-left: 10px;
+  margin-left: 75px;
   text-align: center;
-  margin-left: 0px;
-  justify-content: center;
-  align-items: center;
-  margin-left: -80px;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 0;
 }
-#ul-footer img {
-  justify-content: center;
-  position: relative;
-  margin-left: 10px;
-  top: -15px;
+#bulb {
+  margin-top: 0;
+
+  display: block;
+  content: "";
+  width: 400px;
+  height: 90px;
+  background-color: rgba(56, 62, 65, 1);
+  border-radius: 20px;
+  transform: translate3d(570px, -80px, 0);
 }
-#fast {
-  margin-bottom: 20px;
+#dashline {
+  width: 130px;
+  height: 5px;
+  position: absolute;
+  transform: translate3d(130px, 45px, 0);
+  color: white;
 }
-#bla {
-  margin-bottom: 15px;
+#dashline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 5px;
+  border-top: 5px dashed white;
 }
-#forbes {
-  margin-bottom: 20px;
+#four {
+  position: absolute;
+  font-size: 40px;
+  padding-left: 10px;
+  margin-left: 75px;
+  text-align: center;
+  transform: translate3d(200px, -9px, 0);
+  color: white;
+}
+#footer-content {
+  padding-left: 10px;
+  margin-left: 75px;
+  text-align: center;
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+  font-weight: lighter;
 }
