@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="aboutus.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/e931d58ed6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <header>
+        <div id="nav-container">
+          <!-- Navigation will be inserted here -->
+        </div>
+      </header>
+    </header>
+    <main>
+      <div id="header-about-us">
+        <h1 id="about-us-text">About Us</h1>
+        <h2 id="about-us-content">
+          Geeks At Designing Solutions LLP is registered under the Central
+          Ministry of Corporate Affairs, Startup India, and KSUM.
+        </h2>
+        <h3 id="about-us-main">
+          We proffer finer services in upskilling, digitalization and marketing
+          that are interactive, user-friendly, brilliantly arranged, novel, and
+          unique.
+        </h3>
+        <div id="icons">
+          <div id="icon-text">
+            <i class="fa-regular fa-square-check"></i>
+            <h3>We cater reliable and premier technological solutions.</h3>
+          </div>
+          <div id="icon-text">
+            <i class="fa-regular fa-square-check"></i>
+            <h3>
+              Precise development of cross-platform mobile applications as per
+              the requirement.
+            </h3>
+          </div>
+          <div id="icon-text">
+            <i class="fa-regular fa-square-check"></i>
+            <h3>
+              Get innovative user-friendly affordable web development services.
+            </h3>
+          </div>
+          <div id="icon-text">
+            <i class="fa-regular fa-square-check"></i>
+            <h3>Workshops, webinars, and internships for enthusiastic geeks</h3>
+          </div>
+          <div id="icon-text">
+            <i class="fa-regular fa-square-check"></i>
+            <h3>Tailored SEO and digital marketing strategies.</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer-head"><h2 id="footer-text">OUR COLLABORATIONS</h2></div>
+      <div id="footer-box">
+        <ul id="ul-footer">
+          <li><img src="image 6.png" alt="image 6" id="tech" /></li>
+          <li><img src="image 5.png" alt="image 6" id="fast" /></li>
+          <li><img src="image 7.png" alt="image 6" id="bla" /></li>
+          <li><img src="image 8.png" alt="image 6" id="forbes" /></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("nav-container").innerHTML = data;
+      })
+      .catch((error) => console.log(error));
+  </script>
+</html>

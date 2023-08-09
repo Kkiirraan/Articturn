@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width
+    , initial-scale=1.0"
+    />
+    <title>home</title>
+    <link rel="stylesheet" href="home.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-container">
+        <!-- Navigation will be inserted here -->
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2 id="welcome">Welcome To</h2>
+        <h1 id="text-section">ArticTurn</h1>
+        <h1 id="text-section-b">Where Innovation Takes Flight</h1>
+        <img src="MAN_SITTING.png" alt="Image 1" id="img-man" />
+        <h4 id="content">
+          Unleash Your Potential with ArticTurn! We're not just a company, we're
+          your creative allies. Immerse yourself in a realm where innovation
+          knows no limits. ArticTurn is your launchpad for turning ideas into
+          digital masterpieces that leave a lasting impact. Whether you're an
+          entrepreneur, a visionary, or a seeker of knowledge, ArticTurn is here
+          to guide you on your journey to success.
+        </h4>
+        <a href="#" id="button-services">Services</a>
+        <h4 id="explore">Explore Our Services</h4>
+      </section>
+    </main>
+    <footer>
+      <h2 id="h1-footer">Follow Us</h2>
+      <div id="footer-line"></div>
+      <div id="footer">
+        <div id="footer-text">
+          <ul id="footer-ul">
+            <li><img src="Instagram.png" alt="Image 1" />Instagram</li>
+            <li><img src="Facebook.png" alt="Image 1" />Facebook</li>
+            <li id="linkedin_li">
+              <img
+                src="LinkedIn Circled.png"
+                alt="Image 1"
+                id="linkedin_img"
+              />LinkedIn
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="loader loader--hidden"></div>
+  </body>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("nav-container").innerHTML = data;
+      })
+      .catch((error) => console.log(error));
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+      loader.classList.add("loader--hidden");
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+      });
+    });
+  </script>
+</html>

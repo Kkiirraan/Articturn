@@ -1,0 +1,302 @@
+header {
+  background-color: rgb(255, 252, 252);
+}
+nav {
+  background-color: rgb(255, 255, 255);
+  margin-left: 10px;
+  margin-right: 100px;
+  height: 101px;
+}
+#right-nav-div {
+  float: right;
+  margin-top: 17px;
+}
+#check {
+  display: none;
+}
+#menu {
+  display: none;
+}
+#cancel {
+  display: none;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 50px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+}
+.sidebar {
+  display: none;
+}
+#left-nav-div {
+  float: left;
+  margin-top: 17px;
+}
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    padding: 0%;
+    height: 100%;
+  }
+  #right-nav-div {
+    padding: 0%;
+    margin-top: 17px;
+  }
+  #home {
+    display: none;
+  }
+  #about {
+    display: none;
+  }
+  #service {
+    display: none;
+  }
+  #team {
+    display: none;
+  }
+  #gallery {
+    display: none;
+  }
+  #contact {
+    display: none;
+  }
+  #left-nav-div {
+    margin-top: 17px;
+  }
+  ul {
+    padding: 0%;
+    margin-top: 0%;
+    display: contents;
+  }
+  li {
+    padding: 0%;
+    margin-top: 0%;
+  }
+  #menu {
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+  }
+  #cancel {
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+  }
+
+  .sidebar {
+    display: inline;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 200px;
+    right: -500px;
+    transition: 1s;
+  }
+  #sidebar-head {
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sidebar ul a {
+    display: block;
+    line-height: 50px;
+    font-size: 15px;
+    color: black;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 245, 245);
+    transition: 0.4s;
+    text-decoration: none;
+  }
+
+  .sidebar ul li:hover a {
+    padding-left: 25px;
+  }
+  #check {
+    display: inline;
+    opacity: 0;
+  }
+  label #menu,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+  }
+  label #menu {
+    right: 40px;
+    top: 10;
+    transition: all 0.5s;
+  }
+  label #cancel {
+    z-index: 1111;
+    opacity: 0;
+    transform: translate3d(10px, -40px, 0);
+  }
+  #check:checked ~ .sidebar {
+    left: 750px;
+  }
+  #check:checked ~ label #menu {
+    left: 750px;
+    opacity: 0;
+  }
+  #check:checked ~ label #cancel {
+    left: 750px;
+    opacity: 1;
+    right: 100px;
+  }
+}
+#navbar_link1 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link1:hover,
+#navbar_link1:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link1::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-45px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link1:hover::after,
+#navbar_link1:focus::after {
+  opacity: 1;
+}
+#navbar_link2 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link2:hover,
+#navbar_link2:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link2::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-45px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link2:hover::after,
+#navbar_link2:focus::after {
+  opacity: 1;
+}
+#navbar_link3 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link3:hover,
+#navbar_link3:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link3::after {
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-63px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link3:hover::after,
+#navbar_link3:focus::after {
+  opacity: 1;
+}
+#navbar_link4 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link4:hover,
+#navbar_link4:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link4::after {
+  content: "";
+  height: 2px;
+  width: 45px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-40px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link4:hover::after,
+#navbar_link4:focus::after {
+  opacity: 1;
+}
+#navbar_link5 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link5:hover,
+#navbar_link5:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link5::after {
+  content: "";
+  height: 2px;
+  width: 55px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-50px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link5:hover::after,
+#navbar_link5:focus::after {
+  opacity: 1;
+}
+#navbar_link6 {
+  text-decoration: none;
+  color: black;
+}
+#navbar_link6:hover,
+#navbar_link6:focus {
+  color: rgb(0, 0, 0);
+}
+#navbar_link6::after {
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transform: translate3d(-62px, 25px, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  border-radius: 2px;
+}
+#navbar_link6:hover::after,
+#navbar_link6:focus::after {
+  opacity: 1;
+}

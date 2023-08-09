@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#smile {
+  background-color: rgb(255, 255, 255);
+  margin-left: 90px;
+  width: 87%;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#smile-1 {
+  margin: 50px;
+  background-color: rgb(255, 255, 255);
+  max-width: 270px;
+  margin-right: 250px;
+  margin-bottom: 150px;
+}
+#smile-2 {
+  margin: 50px;
+  background-color: rgb(255, 255, 255);
+  max-width: 270px;
+  margin-right: 200px;
+
+  margin-bottom: 150px;
+}
+#content-1 {
+  display: inline;
+  font-size: 15px;
+  font-weight: lighter;
+}
+#content-2 {
+  display: inline;
+  font-size: 15px;
+  font-weight: lighter;
+}
+#group-62 {
+  width: 130px;
+  position: absolute;
+  transform: translate3d(-300px, -70px, 0);
+}
+#group-63 {
+  width: 130px;
+  position: absolute;
+  transform: translate3d(-300px, -70px, 0);
+}
+#group-62-no {
+  font-size: 40px;
+  position: absolute;
+  transform: translate3d(-555px, -25px, 0);
+  font-family: "Istok Web", sans-serif;
+}
+#group-63-no {
+  font-size: 40px;
+  position: absolute;
+  transform: translate3d(20px, -25px, 0);
+  font-family: "Istok Web", sans-serif;
+}
+#div-border {
+  border-top: 1px black solid;
+  padding: 20px;
+  margin: 50px;
+  width: 120px;
+  position: absolute;
+  transform: translate3d(220px, 218px, 0);
+}
+#our-team {
+  position: absolute;
+  transform: translate3d(190px, 260px, 0);
+  font-family: "Istok Web", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.swiper {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+footer {
+  margin-top: 180px;
+  margin-left: 00px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate3d(250px, 100px, 0);
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 310px;
+  height: 100%;
+}
+.swiper-slide .active {
+  opacity: 10;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-pagination {
+  position: absolute;
+  transform: translate3d(15px, 70px, 0);
+}
+#card {
+  width: 350px;
+  background-color: aquamarine;
+  height: 400px;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 3, 0);
+}
+#card-content {
+  align-items: center;
+}
+#netflix {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+#div-inside-net {
+  background-color: rgb(0, 0, 0);
+  width: 350px;
+  height: 20px;
+  padding-right: 0px;
+  padding-bottom: 95px;
+  border-radius: 20px 20px 20px 20px;
+  position: absolute;
+  transform: translateY(-19px);
+  border: 2px solid rgb(128, 9, 0);
+}
+#div-inside-net {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+#net-content {
+  align-items: center;
+  justify-content: center;
+  font-family: "Istok Web", sans-serif;
+  font-size: 10px;
+  margin-top: 15px;
+  display: inline;
+}
+#jenojiji {
+  color: aliceblue;
+}
+#founder {
+  color: aliceblue;
+  position: absolute;
+  transform: translate3d(-70px, -24px, 0);
+  font-size: 14px;
+}
+#ul-logo {
+  display: inline;
+  position: absolute;
+  margin-top: -25px;
+}
+#li img {
+  width: 30px;
+  margin: 20px;
+  position: absolute;
+}
+#facebook {
+  position: absolute;
+  transform: translate3d(-190px, 33px, 0);
+  width: 30px;
+}
+#git {
+  position: absolute;
+  transform: translate3d(-115px, 24px, 0);
+  width: 28px;
+}
+#insta {
+  position: absolute;
+  transform: translate3d(-40px, 13px, 0);
+  width: 28px;
+}
+#linked {
+  position: absolute;
+  transform: translate3d(35px, 0px, 0);
+  width: 28px;
+}
+#footer-div {
+  height: 400px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="profile.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <header>
+        <div id="nav-container">
+          <!-- Navigation will be inserted here -->
+        </div>
+      </header>
+    </header>
+    <main>
+      <div id="smile">
+        <div id="smile-1">
+          <h3 id="content-1">
+            Collaborations We had collaborations with top notch colleges,
+            startups and even governmental agencies.
+          </h3>
+          <img src="Group 62.png" alt="group 62" id="group-62" />
+        </div>
+
+        <div id="smile-2">
+          <h3 id="content-2">
+            Collaborations We had collaborations with top notch colleges,
+            startups and even governmental agencies.
+          </h3>
+          <img src="Group 63.png" alt="group 62" id="group-63" />
+        </div>
+        <h2 id="group-62-no">24</h2>
+        <h2 id="group-63-no">25</h2>
+      </div>
+      <div id="div-border"></div>
+      <div id="our-team">OUR TEAM</div>
+    </main>
+
+    <footer> 
+      <div id="footer-div">  <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div id="card">
+              <div id="card-content">
+                <img src="tom hardy.jpg" alt="netflix" id="netflix" />
+                <div id="div-inside-net">
+                  <div id="net-content">
+                    <h1 id="jenojiji">Jeno jiji</h1>
+                    <h2 id="founder">Founder &amp; chief executive officer</h2>
+                    <ul id="ul-logo">
+                      <li id="li"><img src="Facebook (1).png" alt="" id="facebook" /></li>
+                      <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
+                      <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
+                      <li id="li"><img src="LinkedIn.png" alt="" id="linked" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div id="card">
+              <div id="card-content">
+                <img src="tom holland.jpg" alt="netflix" id="netflix" />
+                <div id="div-inside-net">
+                  <div id="net-content">
+                    <h1 id="jenojiji">Jeno jiji</h1>
+                    <h2 id="founder">Founder &amp; chief executive officer</h2>
+                    <ul id="ul-logo">
+                      <li id="li"><img src="Facebook (1).png" alt="" id="facebook" /></li>
+                      <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
+                      <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
+                      <li id="li"> <img src="LinkedIn.png" alt="" id="linked" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <div id="card">
+                  <div id="card-content">
+                    <img src="zendaya.jpg" alt="netflix" id="netflix" />
+                    <div id="div-inside-net">
+                      <div id="net-content">
+                        <h1 id="jenojiji">Jeno jiji</h1>
+                        <h2 id="founder">Founder &amp; chief executive officer</h2>
+                        <ul id="ul-logo">
+                          <li id="li"><img src="Facebook (1).png" alt="" id="facebook" /></li>
+                          <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
+                          <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
+                          <li id="li"><img src="LinkedIn.png" alt="" id="linked" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> 
+      <div class="  "></div>
+
+    </div></footer>
+  </body>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+       var swiper = new Swiper(".mySwiper", {
+         effect: "coverflow",
+         grabCursor: true,
+         centeredSlides: true,
+         slidesPerView: "auto",
+         coverflowEffect: {
+           rotate: 50,
+           stretch: 0,
+           depth: 100,
+           modifier: 1,
+           slideShadows: true,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+         },
+         on: {
+           slideChangeTransitionStart: function () {
+             // Reset opacity for all slides before changing
+             var slides = this.slides;
+             for (var i = 0; i < slides.length; i++) {
+               slides[i].style.transform = "scale(0.8)";
+
+               slides[i].style.opacity = 0.7; // Adjust the desired opacity value
+             }
+     
+             // Set full opacity for the active slide
+             slides[this.activeIndex].style.transform = "scale(1)";
+
+             slides[this.activeIndex].style.opacity = 1;
+           },
+         },
+       });
+       
+     </script>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("nav-container").innerHTML = data;
+      })
+      .catch((error) => console.log(error));
+  </script>
+</html>
