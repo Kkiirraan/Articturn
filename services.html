@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-container">
+        <!-- Navigation will be inserted here -->
+      </div>
+    </header>
+    <main>
+      <h1 id="services">Our Services</h1>
+      <h2 id="emp">
+        Empowering Your Digital Presence - Our Comprehensive Services
+      </h2>
+      <h3 id="content">
+        ArticTurn offers a panoramic spectrum of services that empower your
+        digital journey. From Mobile Application Development that brings your
+        ideas to fingertips, to Web Development that shapes your online
+        identity, our offerings span the digital landscape. Elevate your brand
+        with Digital Marketing, captivate audiences with Graphic Designing, and
+        explore a realm of knowledge through Workshops and Webinars. Need
+        guidance? Our Digital Consultations are at your service.
+      </h3>
+      <div id="mobile">
+        <h2 id="mobapp">Mobile Application Development</h2>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Mobile.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          Elevate your business or project with our cutting-edge Mobile
+          Application Development service. From concept to code, we specialize
+          in crafting mobile apps that captivate and engage your target
+          audience. Our expert team ensures seamless functionality,
+          user-friendly interfaces, and top-notch performance across various
+          platforms. Whether it's iOS or Android, we're here to transform your
+          vision into a dynamic mobile experience.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp1"><h2 id="web">Web Development</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="web.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          Step into the digital realm with our Web Development service that
+          merges innovation with functionality. Our team of skilled developers
+          transforms your ideas into captivating websites that make an impact.
+          With responsive designs, intuitive navigation, and robust
+          architecture, we create online spaces that reflect your brand's
+          essence. Embrace the power of the web and unlock endless
+          possibilities.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp2"><h2>Digital Marketing</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Commercial.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          Navigate the digital landscape with our Digital Marketing service
+          tailored for modern success. Our experts craft data-driven strategies
+          that boost your online visibility, engage your audience, and drive
+          conversions. From SEO to social media campaigns, we create a
+          compelling digital narrative that resonates with your target market.
+          Let us be your partners in the journey towards digital prominence.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp2"><h2>Project Support</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Laptop Coding.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          At the heart of ArticTurn's commitment lies our Project Support and
+          Internship program. We bridge the gap between learning and
+          application, offering budding talents a platform to gain real-world
+          experience. Through mentorship and hands-on projects, we foster
+          growth, innovation, and excellence. Join us in shaping the next
+          generation of trailblazers.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp2"><h2>Worshops & Webinars</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Video Conference.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          Step into the digital realm with our Web Development service that
+          merges innovation with functionality. Our team of skilled developers
+          transforms your ideas into captivating websites that make an impact.
+          With responsive designs, intuitive navigation, and robust
+          architecture, we create online spaces that reflect your brand's
+          essence. Embrace the power of the web and unlock endless
+          possibilities.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp2"><h2>Graphic Designing</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Windows 10 Personalization.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          Step into the digital realm with our Web Development service that
+          merges innovation with functionality. Our team of skilled developers
+          transforms your ideas into captivating websites that make an impact.
+          With responsive designs, intuitive navigation, and robust
+          architecture, we create online spaces that reflect your brand's
+          essence. Embrace the power of the web and unlock endless
+          possibilities.
+        </h4>
+      </div>
+      <div id="mobile">
+        <div id="mobapp2"><h2>UI/UX Designing</h2></div>
+        <div id="triangle"></div>
+        <div id="circle">
+          <img src="Content.png" alt="mobile" id="mob" />
+        </div>
+        <h4 id="mobcont">
+          great UI/UX design aims to make the user's interaction with your
+          product seamless, efficient, and enjoyable.
+        </h4>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("nav-container").innerHTML = data;
+      })
+      .catch((error) => console.log(error));
+  </script>
+</html>

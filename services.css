@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-left: 6.5%;
+}
+#services {
+  font-family: "Istok Web", sans-serif;
+  font-size: 30px;
+  color: rgba(56, 62, 65, 1);
+}
+#emp {
+  font-family: "Istok Web", sans-serif;
+  color: rgba(56, 62, 65, 1);
+  font-size: 17px;
+  font-weight: lighter;
+  font-style: italic;
+  margin-top: -10px;
+}
+#content {
+  font-family: "Istok Web", sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  width: 80%;
+  line-height: 200%;
+  font-size: 17px;
+}
+#mobile {
+  background-color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+}
+#mobapp {
+  font-family: "Istok Web", sans-serif;
+  font-size: large;
+  font-weight: 15px;
+  margin-right: 50px;
+  margin-top: 2.5%;
+  background-color: rgba(56, 62, 65, 1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 2.5%;
+  position: relative;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 43px solid transparent;
+  border-right: 43px solid transparent;
+  border-bottom: 17px solid rgba(56, 62, 65, 1);
+  position: absolute;
+  transform: rotate(90deg) translate3d(-83.5px, -255px, 0);
+  border-radius: 2px;
+}
+#mobcont {
+  font-family: "Istok Web", sans-serif;
+  margin-top: 2.5%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: lighter;
+  width: 900px;
+  margin-right: 7%;
+  position: absolute;
+  transform: translate3d(350px, -150px, 0);
+  padding-top: 0px;
+}
+#circle {
+  content: "";
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translate3d(-60px, -120px, 0);
+  border: 1px solid black;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#mob {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  transform: translate3d(20px, 20px, 0);
+}
+#mobapp1 {
+  margin-right: 50px;
+  margin-top: 2.5%;
+  background-color: rgba(56, 62, 65, 1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 2.5%;
+  position: relative;
+  color: white;
+  height: 42px;
+  justify-content: center;
+}
+#mobapp1 h2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: large;
+
+  display: block;
+  position: absolute;
+  transform: translate3d(50px, -9px, 0);
+}
+#mobapp2 h2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: large;
+
+  display: block;
+  position: absolute;
+  transform: translate3d(50px, -9px, 0);
+}
+#mobapp2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: large;
+  font-weight: 15px;
+  margin-right: 50px;
+  margin-top: 2.5%;
+  background-color: rgba(56, 62, 65, 1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 2.5%;
+  position: relative;
+  color: white;
+  height: 42px;
+  text-align: center;
+}
