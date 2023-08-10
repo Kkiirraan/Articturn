@@ -19,27 +19,14 @@
       </header>
     </header>
     <main>
-      <div id="smile">
-        <div id="smile-1">
-          <h3 id="content-1">
-            Collaborations We had collaborations with top notch colleges,
-            startups and even governmental agencies.
-          </h3>
-          <img src="Group 62.png" alt="group 62" id="group-62" />
-        </div>
+     <div id="content">
+      <h2 id="meet">Meet Our Team</h2>
+      <h3 id="avengers">The ArticTurn Avengers - Architects of Innovation </h3>
+      <h4 id="content1">Behind every success story at ArticTurn is a team of visionaries who craft the extraordinary. Meet the minds that turn concepts into reality, led by a passion for perfection and an unwavering commitment to excellence. From coders to creators, strategists to storytellers, our team embodies the spirit of ArticTurn, shaping destinies one project at a time.
 
-        <div id="smile-2">
-          <h3 id="content-2">
-            Collaborations We had collaborations with top notch colleges,
-            startups and even governmental agencies.
-          </h3>
-          <img src="Group 63.png" alt="group 62" id="group-63" />
-        </div>
-        <h2 id="group-62-no">24</h2>
-        <h2 id="group-63-no">25</h2>
-      </div>
-      <div id="div-border"></div>
-      <div id="our-team">OUR TEAM</div>
+
+      </h4>
+     </div>
     </main>
 
     <footer> 
@@ -59,6 +46,44 @@
                       <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
                       <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
                       <li id="li"><img src="LinkedIn.png" alt="" id="linked" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div id="card">
+              <div id="card-content">
+                <img src="tom holland.jpg" alt="netflix" id="netflix" />
+                <div id="div-inside-net">
+                  <div id="net-content">
+                    <h1 id="jenojiji">Jeno jiji</h1>
+                    <h2 id="founder">Founder &amp; chief executive officer</h2>
+                    <ul id="ul-logo">
+                      <li id="li"><img src="Facebook (1).png" alt="" id="facebook" /></li>
+                      <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
+                      <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
+                      <li id="li"> <img src="LinkedIn.png" alt="" id="linked" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div id="card">
+              <div id="card-content">
+                <img src="tom holland.jpg" alt="netflix" id="netflix" />
+                <div id="div-inside-net">
+                  <div id="net-content">
+                    <h1 id="jenojiji">Jeno jiji</h1>
+                    <h2 id="founder">Founder &amp; chief executive officer</h2>
+                    <ul id="ul-logo">
+                      <li id="li"><img src="Facebook (1).png" alt="" id="facebook" /></li>
+                      <li id="li"><img src="GitHub.png" alt="" id="git" /></li>
+                      <li id="li"><img src="Instagram (1).png" alt="" id="insta" /></li>
+                      <li id="li"> <img src="LinkedIn.png" alt="" id="linked" /></li>
                     </ul>
                   </div>
                 </div>
@@ -115,40 +140,50 @@
 
    <!-- Initialize Swiper -->
    <script>
-       var swiper = new Swiper(".mySwiper", {
-         effect: "coverflow",
-         grabCursor: true,
-         centeredSlides: true,
-         slidesPerView: "auto",
-         coverflowEffect: {
-           rotate: 50,
-           stretch: 0,
-           depth: 100,
-           modifier: 1,
-           slideShadows: true,
-         },
-         pagination: {
-           el: ".swiper-pagination",
-         },
-         on: {
-           slideChangeTransitionStart: function () {
-             // Reset opacity for all slides before changing
-             var slides = this.slides;
-             for (var i = 0; i < slides.length; i++) {
-               slides[i].style.transform = "scale(0.8)";
-
-               slides[i].style.opacity = 0.7; // Adjust the desired opacity value
-             }
-     
-             // Set full opacity for the active slide
-             slides[this.activeIndex].style.transform = "scale(1)";
-
-             slides[this.activeIndex].style.opacity = 1;
-           },
-         },
-       });
-       
-     </script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "slide",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 5,
+      initialSlide: 2,
+      coverflowEffect: {
+        rotate: 100,
+        stretch: 0,
+        depth: 10,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          var slides = this.slides;
+          var activeIndex = this.activeIndex;
+          for (var i = 0; i < slides.length; i++) {
+            if (i !== this.activeIndex) {
+              slides[i].style.transform = "scale(0.8)";
+              slides[i].style.opacity = 0.95;
+            } else {
+              slides[i].style.transform = "scale(1)";
+              slides[i].style.opacity = 1;
+            }}
+          // Set z-index for slides
+          slides.forEach(function (slide, index) {
+            var zIndex;
+            if (index === activeIndex) {
+              zIndex = 2; // Active slide
+            } else if (index > activeIndex) {
+              zIndex = 1 - (index - activeIndex); // Slides to the right
+            } else {
+              zIndex = 0 - (activeIndex - index); // Slides to the left
+            }
+            slide.style.zIndex = zIndex;
+          });
+        },}
+    });
+  </script>
+  
   <script>
     fetch("navbar.html")
       .then((response) => response.text())
@@ -157,4 +192,18 @@
       })
       .catch((error) => console.log(error));
   </script>
+  <style>
+    .swiper-slide {
+      transition: transform 0.5s, opacity 0.5s;
+      z-index: 1;
+
+    }
+  
+    .swiper-slide:not(.swiper-slide-active) {
+      clip-path: polygon(0.5 0.5, 100% 0, 100% 100%, 0% 100%);
+     
+      opacity: 1; 
+    }
+
+  </style>
 </html>
