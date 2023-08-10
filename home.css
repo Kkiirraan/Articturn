@@ -54,11 +54,11 @@ section {
 #text-section {
   margin: 0%;
   padding: 0%;
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
   position: relative;
   top: 50%;
-  transform: translate3d(-20%, -25%, 0);
+  transform: translate3d(-12%, -25%, 0);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 #text-section:hover {
@@ -74,22 +74,22 @@ section {
   font-family: "jost", sans-serif;
   font-weight: 100px;
   font-size: 20px;
-  transform: translate3d(7px, 113px, 0);
+  transform: translate3d(75px, 100px, 0);
   font-style: italic;
 }
 #welcome {
   font-family: "Istok Web", sans-serif;
   position: absolute;
   font-size: 28px;
-  transform: translate3d(45px, 68px, 0);
+  transform: translate3d(80px, 68px, 0);
 }
 #content {
   font-family: "Istok Web", sans-serif;
   position: absolute;
-  transform: translate3d(-170px, -230px, 0);
+  transform: translate3d(-170px, -240px, 0);
   font-size: 14px;
   margin-top: 80px;
-  width: 600px;
+  width: 700px;
   text-align: center;
 }
 #button-services {
@@ -103,7 +103,7 @@ section {
   position: absolute;
   color: white;
   font-family: "Istok Web", sans-serif;
-  transform: translate3d(-60px, 175px, 0);
+  transform: translate3d(45px, 165px, 0);
   font-weight: bold;
 }
 #button-services:hover {
@@ -117,7 +117,7 @@ section {
 }
 #explore {
   font-family: "Istok Web", sans-serif;
-  transform: translate3d(220px, -180px, 0);
+  transform: translate3d(333px, -185px, 0);
 }
 #footer {
   background-color: rgb(255, 255, 255);
@@ -161,7 +161,7 @@ section {
 #img-man {
   width: 350px;
   height: 300px;
-  transform: rotate(-9.4deg) translate3d(120px, -200px, 0);
+  transform: rotate(-9.4deg) translate3d(215px, -195px, 0);
   grid-area: overlap;
 }
 #group-62-no {
