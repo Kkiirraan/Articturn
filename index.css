@@ -76,12 +76,14 @@ section {
   font-size: 20px;
   transform: translate3d(75px, 100px, 0);
   font-style: italic;
+  display: flex;
 }
 #welcome {
   font-family: "Istok Web", sans-serif;
   position: absolute;
   font-size: 28px;
   transform: translate3d(80px, 68px, 0);
+  display: flex;
 }
 #content {
   font-family: "Istok Web", sans-serif;
@@ -91,6 +93,7 @@ section {
   margin-top: 80px;
   width: 700px;
   text-align: center;
+  display: flex;
 }
 #button-services {
   text-decoration: none;
@@ -103,8 +106,9 @@ section {
   position: absolute;
   color: white;
   font-family: "Istok Web", sans-serif;
-  transform: translate3d(45px, 165px, 0);
+  transform: translate3d(570px, -130px, 0);
   font-weight: bold;
+  display: flex;
 }
 #button-services:hover {
   background-color: white;
