@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Istok+Web&family=Poppins:wght@300&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: NICOMOJI;
+  src: url(NicoMoji-Regular.ttf);
+}
+
+.active {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.contacts {
+  margin-top: 2%;
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+}
+.contact-text {
+  color: #0c0a21;
+  font-family: Istok Web;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+.contact-line {
+  width: 180px;
+  height: 1px;
+  background: #0c0a21;
+  margin-left: 4px;
+}
+
+.map {
+  margin-top: 2%;
+  width: max-content;
+  height: fit-content;
+  margin-left: 20%;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 30px;
+}
+
+form {
+  padding: 6% !important;
+  width: 85%;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group.label-top {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-group.label-top label {
+  flex-basis: 100%;
+}
+
+.form-group.message-group {
+  position: relative;
+}
+
+.form-group.message-group textarea {
+  padding-right: 40px;
+}
+
+.form-group.message-group button.submit-icon {
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 3px;
+  line-height: 20px;
+  padding-left: 10px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0c0a21, #d9d9d9) border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+input::placeholder {
+  font-weight: 700;
+  padding-left: 10px;
+  color: #0c0a21;
+}
+
+input:focus::placeholder {
+  color: white;
+}
+
+textarea {
+  width: 90%;
+  padding: 3px;
+  line-height: 20px;
+  padding-left: 10px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0c0a21, #d9d9d9) border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+textarea::placeholder {
+  padding-top: 10px;
+  font-weight: 800;
+  padding-left: 10px;
+  color: #0c0a21;
+}
+
+textarea:focus::placeholder {
+  color: white;
+}
+
+#subject {
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loc {
+  display: flex;
+}

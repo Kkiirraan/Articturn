@@ -61,6 +61,7 @@ main {
   position: absolute;
   transform: rotate(90deg) translate3d(-83.5px, -255px, 0);
   border-radius: 2px;
+  display: none;
 }
 #mobcont {
   font-family: "Istok Web", sans-serif;

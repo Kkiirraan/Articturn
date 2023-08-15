@@ -82,6 +82,7 @@ ul {
     font-weight: bold;
     font-size: 16px;
     display: inline;
+    margin-top: 0px;
   }
   #cancel {
     font-family: "Istok Web", sans-serif;
@@ -276,4 +277,92 @@ ul {
 #navbar_link6:hover::after,
 #navbar_link6:focus::after {
   opacity: 1;
+}
+@media (max-width: 428px) {
+  html,
+  body {
+    padding: 0%;
+    height: 100%;
+    max-width: 395px;
+  }
+  #right-nav-div {
+    padding: 0%;
+    margin-top: 17px;
+  }
+  nav {
+    background-color: rgb(255, 255, 255);
+    margin-left: -35px;
+    margin-right: 0px;
+    height: 101px;
+  }
+  #menu {
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline;
+    margin-top: 0px;
+  }
+  label #menu {
+    right: 120px;
+    top: 10;
+    transition: all 0.5s;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    opacity: 0;
+    transform: translate3d(10px, -40px, 0);
+    display: none;
+  }
+  #check:checked ~ .sidebar {
+    left: 70px;
+  }
+  #check:checked ~ label #menu {
+    left: 70px;
+    opacity: 0;
+  }
+  #check:checked ~ label #cancel {
+    left: 70px;
+    opacity: 1;
+    right: 0px;
+  }
+  .sidebar {
+    display: none;
+    position: fixed;
+    width: 90px;
+    height: 220px;
+    background-color: rgb(231, 235, 0);
+    right: 0;
+    top: 40px; /* Adjust this value as needed */
+    transition: 1s;
+    z-index: 1111;
+  }
+  #sidebar-head {
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 1px;
+    margin-top: 0;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .sidebar ul a {
+    display: block;
+    line-height: 10px;
+    font-size: 14px;
+    color: black;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 245, 245);
+    transition: 0.4s;
+    text-decoration: none;
+  }
+
+  .sidebar ul li:hover a {
+    padding-left: 25px;
+  }
+  #check {
+    display: inline;
+    opacity: 0;
+  }
 }

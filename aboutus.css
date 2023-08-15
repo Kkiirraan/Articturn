@@ -42,12 +42,12 @@ body {
 }
 #learn {
   padding-left: 10px;
-  margin-left: 75px;
+  margin-left: -80px;
   text-align: center;
   font-family: "Istok Web", sans-serif;
   font-size: 20px;
   font-weight: bolder;
-  margin-top: 0;
+  margin-top: 40;
 }
 #bulb {
   margin-top: 0;
@@ -93,4 +93,107 @@ body {
   font-size: 16px;
   margin-top: 0;
   font-weight: lighter;
+}
+#proimg {
+  position: absolute;
+  margin-left: 75px;
+
+  transform: translate3d(770%, -100%, 0);
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 428px) {
+  html,
+  body {
+    max-height: 844px;
+    margin: 0;
+    padding: 0;
+    max-width: 390px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  #right-nav-div {
+    margin-top: 10px;
+  }
+
+  main {
+    height: 40%;
+    text-align: center;
+  }
+  #about-us-text {
+    text-align: left;
+    margin-left: 8px;
+    font-family: "Istok Web", sans-serif;
+    font-size: 20px;
+    margin-top: -40;
+  }
+  #about-us-main {
+    position: relative;
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    position: absolute;
+    font-family: "Istok Web", sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    top: 130px;
+    font-size: 14px;
+    width: 200px;
+  }
+  #header-about-us {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    width: 200px;
+  }
+  #learn {
+    text-align: left;
+    font-family: "Istok Web", sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 17px;
+    position: absolute;
+    transform: translate3d(-10px, 300px, 0);
+  }
+  #content {
+    width: 250px;
+    margin-top: 50px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    position: absolute;
+    transform: translate3d(-70px, -10px, 0);
+  }
+  #footer-content {
+    margin-left: 10px;
+    text-align: left;
+    font-family: "Istok Web", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 270px;
+    position: absolute;
+    transform: translate3d(5px, 55px, 0);
+  }
+  #bulb {
+    display: none;
+  }
+  #dashline {
+    display: none;
+  }
+  #dashline::before {
+    display: none;
+  }
+  #four {
+    display: none;
+  }
+
+  #proimg {
+    display: none;
+  }
 }
